@@ -1,0 +1,6 @@
+﻿  Source.c
+C:\Users\gorya\OneDrive\Desktop\Infa\CountLaunches\CountLaunches\Source.c(17,68): warning C4133: функция: несовместимые типы - из "DWORD *" в "LPBYTE"
+C:\Users\gorya\OneDrive\Desktop\Infa\CountLaunches\CountLaunches\Source.c(27,42): warning C4047: функция: "DWORD" отличается по уровням косвенного обращения от "void *"
+C:\Users\gorya\OneDrive\Desktop\Infa\CountLaunches\CountLaunches\Source.c(27,38): warning C4024: RegSetValueExW: различные типы для формального и фактического параметров 3
+C:\Users\gorya\OneDrive\Desktop\Infa\CountLaunches\CountLaunches\Source.c(27,62): warning C4133: функция: несовместимые типы - из "DWORD *" в "const BYTE *"
+  CountLaunches.vcxproj -> C:\Users\gorya\OneDrive\Desktop\Infa\CountLaunches\Debug\CountLaunches.exe
