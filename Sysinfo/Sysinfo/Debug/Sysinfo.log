@@ -1,0 +1,3 @@
+﻿  SIfunctions.c
+C:\Users\gorya\OneDrive\Desktop\Infa\Sysinfo\Sysinfo\SIfunctions.c(25,36): warning C4133: функция: несовместимые типы - из "char *" в "LPCWSTR"
+  Sysinfo.vcxproj -> C:\Users\gorya\OneDrive\Desktop\Infa\Sysinfo\Debug\Sysinfo.exe
