@@ -1,0 +1,3 @@
+﻿  Source.c
+C:\Users\gorya\OneDrive\Desktop\Infa\MyGame.2.0\MyGame.2.0\Source.c(246,24): warning C4087: EndTextureMode: объявление с "void"-списком параметров
+  MyGame.2.0.vcxproj -> C:\Users\gorya\OneDrive\Desktop\Infa\MyGame.2.0\Debug\MyGame.2.0.exe
