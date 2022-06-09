@@ -1,0 +1,9 @@
+﻿  Source.c
+C:\Users\gorya\OneDrive\Desktop\Network\Network\Source.c(26,10): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+C:\Users\gorya\OneDrive\Desktop\Network\Network\Source.c(26,10): message : заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+C:\Users\gorya\OneDrive\Desktop\Network\Network\Source.c(26,10): message : отсутствующий вариативный аргумент "2" требуется для строки форматирования "%c"
+C:\Users\gorya\OneDrive\Desktop\Network\Network\Source.c(26,10): message : этот аргумент используется в качестве размера буфера
+C:\Users\gorya\OneDrive\Desktop\Network\Network\Source.c(31,17): warning C4133: функция: несовместимые типы - из "SOCKADDR_IN *" в "const sockaddr *"
+C:\Users\gorya\OneDrive\Desktop\Network\Network\Source.c(45,14): warning C4133: функция: несовместимые типы - из "SOCKADDR_IN *" в "const sockaddr *"
+C:\Users\gorya\OneDrive\Desktop\Network\Network\Source.c(55,48): warning C4133: функция: несовместимые типы - из "SOCKADDR_IN *" в "sockaddr *"
+  Network.vcxproj -> C:\Users\gorya\OneDrive\Desktop\Network\Debug\Network.exe
