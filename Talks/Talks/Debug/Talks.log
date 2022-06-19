@@ -1,0 +1,9 @@
+﻿  Source.c
+C:\Users\gorya\source\repos\Talks\Talks\Source.c(27,10): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+C:\Users\gorya\source\repos\Talks\Talks\Source.c(27,10): message : заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+C:\Users\gorya\source\repos\Talks\Talks\Source.c(27,10): message : отсутствующий вариативный аргумент "2" требуется для строки форматирования "%c"
+C:\Users\gorya\source\repos\Talks\Talks\Source.c(27,10): message : этот аргумент используется в качестве размера буфера
+C:\Users\gorya\source\repos\Talks\Talks\Source.c(35,17): warning C4133: функция: несовместимые типы - из "SOCKADDR_IN *" в "const sockaddr *"
+C:\Users\gorya\source\repos\Talks\Talks\Source.c(41,14): warning C4133: функция: несовместимые типы - из "SOCKADDR_IN *" в "const sockaddr *"
+C:\Users\gorya\source\repos\Talks\Talks\Source.c(51,48): warning C4133: функция: несовместимые типы - из "SOCKADDR_IN *" в "sockaddr *"
+  Talks.vcxproj -> C:\Users\gorya\source\repos\Talks\Debug\Talks.exe
