@@ -1,0 +1,4 @@
+﻿  Source.c
+C:\Users\gorya\source\repos\2dAnimation\2dAnimation\Source.c(95,2): warning C4098: main: функция типа "void", возвращающая значение
+C:\Users\gorya\source\repos\2dAnimation\2dAnimation\Source.c(18): warning C4715: WndProc: значение возвращается не при всех путях выполнения
+  2dAnimation.vcxproj -> C:\Users\gorya\source\repos\2dAnimation\Debug\2dAnimation.exe
