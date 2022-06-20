@@ -1,0 +1,3 @@
+﻿  Source.c
+C:\Users\gorya\source\repos\KQueensArrangemet\KQueensArrangemet\Source.c(24,15): warning C4101: pos: неиспользованная локальная переменная
+  KQueensArrangemet.vcxproj -> C:\Users\gorya\source\repos\KQueensArrangemet\Debug\KQueensArrangemet.exe
