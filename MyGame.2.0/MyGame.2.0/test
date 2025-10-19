@@ -1,0 +1,84 @@
+# программа с двумя экранами
+from kivy.app import App
+from kivy.uix.button import Button
+from kivy.uix.label import Label
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.textinput import TextInput
+from kivy.uix.image import Image
+from kivy.uix.video import Video
+from kivy.uix.screenmanager import ScreenManager, Screen
+from instructions import *
+
+# Экран (объект класса Screen) - это виджет типа "макет" (Screen - наследник класса RelativeLayout).
+# ScreenManager - это особый виджет, который делает видимым один из прописанных в нём экранов.
+
+
+class FirstScr(Screen):
+    def __init__(self, name='first'):
+        super().__init__(name=name) # имя экрана должно передаваться конструктору класса Screen
+        btn_2 = Button(text = 'Начать',size_hint = (0.4,0.2),pos_hint={'center_x':0.5})
+        lab = Label(text = txt_instruction)
+        ti = TextInput(text = 'Имя:',size_hint = (0.5,0.3),pos_hint={'center_x':0.5})
+        ti_2 = TextInput(text = 'Возраст:',size_hint = (0.5,0.3),pos_hint={'center_x':0.5})
+        box = BoxLayout(orientation = 'vertical')
+        btn_2.on_press = self.next
+        box.add_widget(lab)
+        box.add_widget(ti)
+        box.add_widget(ti_2)
+        box.add_widget(btn_2)
+        self.add_widget(box)
+    def next(self):
+        self.manager.transition.direction = 'left'                
+        self.manager.current = 'second'
+class SecondScr(Screen):
+    def __init__(self, name='second'):
+        super().__init__(name=name)
+        btn_2 = Button(text = 'Продолжить',size_hint = (0.4,0.2),pos_hint={'center_x':0.5})
+        lab = Label(text = txt_test1)
+        ti = TextInput(size_hint = (0.5,0.3),pos_hint={'center_x':0.5})
+        box = BoxLayout(orientation = 'vertical')
+        btn_2.on_press = self.next
+        box.add_widget(lab)
+        box.add_widget(ti)
+        box.add_widget(btn_2)
+        self.add_widget(box)
+        
+    def next(self):
+        self.manager.transition.direction = 'left'
+        self.manager.current = 'myscr'
+
+class MyScr(Screen):
+    def __init__(self, name='myscr'):
+        super().__init__(name=name)
+        
+        
+    def next(self):
+        self.manager.transition.direction = 'left'
+        self.manager.current = 'foure'
+
+class FoureScr(Screen):
+    def __init__(self, name='foure'):
+        super().__init__(name=name)
+        
+    def next(self):
+        self.manager.transition.direction = 'left'
+        self.manager.current = 'final'
+
+class FinalScr(Screen):
+    def __init__(self, name='final'):
+        super().__init__(name=name)
+        
+
+class MyApp(App):
+    def build(self):
+        sm = ScreenManager()
+        sm.add_widget(FirstScr())
+        sm.add_widget(SecondScr())
+        sm.add_widget(MyScr())
+        sm.add_widget(FoureScr())
+        sm.add_widget(FinalScr())
+        # будет показан FirstScr, потому что он добавлен первым. Это можно поменять вот так:
+        # sm.current = 'second'
+        return sm
+app = MyApp()
+app.run()
